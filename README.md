@@ -8,7 +8,7 @@ cfssl genkey -initca config/rootCA.json | cfssljson -bare generated/rootCA
 
 ## Generate Fake Intermediate Root CA
 ```bash
-cfssl gencert -ca=rootCA.pem -ca-key=generated/rootCA-key.pem -config=config/cfssl.json -profile=intermediate_ca config/intermediateCA.json | cfssljson -bare generated/intermediateCA
+cfssl gencert -ca=generated/rootCA.pem -ca-key=generated/rootCA-key.pem -config=config/cfssl.json -profile=intermediate_ca config/intermediateCA.json | cfssljson -bare generated/intermediateCA
 ```
 
 ## Generate client & server certificates
