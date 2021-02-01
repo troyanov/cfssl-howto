@@ -1,0 +1,12 @@
+{
+    "CN": "Fake Root CA",
+    "key": {
+        "algo": "ecdsa",
+        "size": 521
+    },
+    "names": [{
+        "C": "RU",
+        "L": "Moscow",
+        "O": "Fortune 500 company"
+    }]
+}
